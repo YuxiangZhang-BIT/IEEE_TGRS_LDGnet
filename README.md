@@ -1,6 +1,6 @@
-# Language-aware Domain Generalization Network for Cross-Scene Hyperspectral Image Classificationl
+# Language-aware Domain Generalization Network for Cross-Scene Hyperspectral Image Classification
 
-Paper web page: [Topological Structure and Semantic Information Transfer Network for Cross-Scene Hyperspectral Image Classification](https://ieeexplore.ieee.org/document/9540028).
+Paper web page: [Language-aware Domain Generalization Network for Cross-Scene Hyperspectral Image Classificatio](https://arxiv.org/abs/2209.02700).
 
 Reading [知乎-Yammo](https://zhuanlan.zhihu.com/p/582966086)
 
