@@ -62,19 +62,7 @@ datasets
 
 2.You can change the `source_name` and `target_name` in train.py to set different transfer tasks.
 
-3.Run python train.py.
-
-## Results
-
-```bash
-# Default results directory is:
-./results
-```
-
-```bash
-# Default logs directory is:
-./logs
-```
+3.Run python train_queue.py.
 
 ## Note
 
