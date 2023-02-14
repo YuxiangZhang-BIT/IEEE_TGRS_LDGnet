@@ -17,19 +17,15 @@ import clip
 import time
 parser = argparse.ArgumentParser(description='PyTorch LDGnet')
 
-parser.add_argument('--save_path', type=str, default="/home/zyx/code/LDGnet/results/",
+parser.add_argument('--save_path', type=str, default="./results/",
                     help='the path to save the model')
-parser.add_argument('--data_path', type=str, default= '/home/zyx/data/Houston/',
+parser.add_argument('--data_path', type=str, default='./datasets/Houston/',
                     help='the path to load the data')
-# parser.add_argument('--save_path', type=str, default="./results/",
-#                     help='the path to save the model')
-# parser.add_argument('--data_path', type=str, default='./datasets/Houston/',
-#                     help='the path to load the data')
 parser.add_argument('--source_name', type=str, default='Houston13',
                     help='the name of the source dir')
 parser.add_argument('--target_name', type=str, default='Houston18',
                     help='the name of the test dir')
-parser.add_argument('--cuda', type=int, default=1,
+parser.add_argument('--cuda', type=int, default=0,
                     help="Specify CUDA device (defaults to -1, which learns on CPU)")
 
 # Training options
