@@ -1,6 +1,6 @@
 # Language-aware Domain Generalization Network for Cross-Scene Hyperspectral Image Classification
 
-Paper web page: [Language-aware Domain Generalization Network for Cross-Scene Hyperspectral Image Classificatio](https://arxiv.org/abs/2209.02700).
+Paper web page: [Language-aware Domain Generalization Network for Cross-Scene Hyperspectral Image Classificatio](https://ieeexplore.ieee.org/abstract/document/10005113).
 
 Reading [知乎-Yammo](https://zhuanlan.zhihu.com/p/582966086)
 
@@ -17,6 +17,15 @@ Text information including extensive prior knowledge about land cover classes ha
 Please cite our paper if you find the code or dataset useful for your research.
 
 ```
+@ARTICLE{10005113,
+  author={Zhang, Yuxiang and Zhang, Mengmeng and Li, Wei and Wang, Shuai and Tao, Ran},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={Language-Aware Domain Generalization Network for Cross-Scene Hyperspectral Image Classification}, 
+  year={2023},
+  volume={61},
+  number={},
+  pages={1-12},
+  doi={10.1109/TGRS.2022.3233885}}
 
 ```
 
@@ -49,7 +58,7 @@ datasets
 
 ## Usage
 
-1.You can download [Houston &amp; Pavia](https://github.com/YuxiangZhang-BIT/Data-CSHSI) dataset here. 
+1.You can download [Houston &amp; Pavia](https://github.com/YuxiangZhang-BIT/Data-CSHSI) dataset here, and the CLIP pre-training weight [ViT-B-32.pt](https://openaipublic.azureedge.net/clip/models/40d365715913c9da98579312b702a82c18be219cc2a73407c4526f58eba950af/ViT-B-32.pt) here.
 
 2.You can change the `source_name` and `target_name` in train.py to set different transfer tasks.
 
@@ -70,3 +79,4 @@ datasets
 ## Note
 
 - The variable names of data and gt in .mat file are set as `ori_data` and `map`.
+- For Pavia dataset and Houston dataset, args.re_ratio is set to 1 and 5, respectively
