@@ -1,5 +1,10 @@
 # Language-aware Domain Generalization Network for Cross-Scene Hyperspectral Image Classification
 
+## Update 09/2023: LDGnet won the Highly Cited Paper.
+<p align='center'>
+  <img src='figure/LDGnet-ESI.png' width="800px">
+</p>
+
 Paper web page: [Language-aware Domain Generalization Network for Cross-Scene Hyperspectral Image Classificatio](https://ieeexplore.ieee.org/abstract/document/10005113).
 
 Reading [知乎-Yammo](https://zhuanlan.zhihu.com/p/582966086)
