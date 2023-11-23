@@ -101,11 +101,11 @@ def get_dataset(dataset_name, target_folder="./", datasets=DATASETS_CONFIG):
 
     if dataset_name == 'Houston13':
         # Load the image
-        img = open_file(folder + 'Houston13.mat')['ori_data']
+        img = np.asarray(open_file(folder + 'Houston13.mat')['ori_data']).transpose(1, 2, 0)
 
         rgb_bands = [13,20,33]
 
-        gt = open_file(folder + 'Houston13_7gt.mat')['map']
+        gt = np.asarray(open_file(folder + 'Houston13_7gt.mat')['map'])
 
         label_values = ["grass healthy", "grass stressed", "trees",
                         "water", "residential buildings",
@@ -122,11 +122,11 @@ def get_dataset(dataset_name, target_folder="./", datasets=DATASETS_CONFIG):
 
     elif dataset_name == 'Houston18':
         # Load the image
-        img = open_file(folder + 'Houston18.mat')['ori_data']
+        img = np.asarray(open_file(folder + 'Houston18.mat')['ori_data']).transpose(1, 2, 0)
 
         rgb_bands = [13,20,33]
 
-        gt = open_file(folder + 'Houston18_7gt.mat')['map']
+        gt = np.asarray(open_file(folder + 'Houston18_7gt.mat')['map'])
 
         label_values = ["grass healthy", "grass stressed", "trees",
                         "water", "residential buildings",
@@ -142,11 +142,11 @@ def get_dataset(dataset_name, target_folder="./", datasets=DATASETS_CONFIG):
 
     elif dataset_name == 'paviaU':
         # Load the image
-        img = open_file(folder + 'paviaU.mat')['ori_data']
+        img = np.asarray(open_file(folder + 'paviaU.mat')['ori_data']).transpose(1, 2, 0)
 
         rgb_bands = [20,30,30]
 
-        gt = open_file(folder + 'paviaU_7gt.mat')['map']
+        gt = np.asarray(open_file(folder + 'paviaU_7gt.mat')['map'])
 
         label_values = ["tree", "asphalt", "brick",
                         "bitumen", "shadow", 'meadow', 'bare soil']
@@ -162,11 +162,11 @@ def get_dataset(dataset_name, target_folder="./", datasets=DATASETS_CONFIG):
         ignored_labels = [0]
     elif dataset_name == 'paviaC':
         # Load the image
-        img = open_file(folder + 'paviaC.mat')['ori_data']
+        img = np.asarray(open_file(folder + 'paviaC.mat')['ori_data']).transpose(1, 2, 0)
 
         rgb_bands = [20,30,30]
 
-        gt = open_file(folder + 'paviaC_7gt.mat')['map']
+        gt = np.asarray(open_file(folder + 'paviaC_7gt.mat')['map'])
 
         label_values = ["tree", "asphalt", "brick",
                         "bitumen", "shadow", 'meadow', 'bare soil']
