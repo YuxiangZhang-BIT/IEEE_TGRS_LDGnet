@@ -40,9 +40,11 @@ def open_file(dataset):
     ext = ext.lower()
     if ext == '.mat':
         # Load Matlab array
+        # matlab v5.0 files using "io.loadmat"
         # return io.loadmat(dataset)
+        # Solve bug: NotImplementedError: Please use HDF reader for matlab v7.3 files, e.g. h5py
         import h5py
-        return h5py.File(dataset).transpose(1, 2, 0)
+        return h5py.File(dataset)
     elif ext == '.tif' or ext == '.tiff':
         # Load TIFF file
         return imageio.imread(dataset)
